@@ -3,61 +3,62 @@ import { Scissors, Sparkles, Briefcase, Heart } from "lucide-react";
 const services = [
   {
     icon: Scissors,
-    title: "Custom-Made Outfits",
+    title: "Bespoke Couture",
     description:
-      "Bespoke designs tailored to your exact measurements, style preferences, and vision. Every piece is unique to you.",
+      "Meticulously crafted garments designed to your exact silhouette — because true luxury is made to measure.",
   },
   {
     icon: Sparkles,
-    title: "Occasion Wear",
+    title: "Occasion & Bridal",
     description:
-      "Stunning outfits for weddings, birthdays, galas, and special events that guarantee you'll stand out.",
+      "Show-stopping ensembles for life's most memorable moments — weddings, galas, and celebrations that deserve to be unforgettable.",
   },
   {
     icon: Briefcase,
-    title: "Corporate Outfits",
+    title: "Power Dressing",
     description:
-      "Professional yet stylish workwear that exudes confidence and elegance in every boardroom.",
+      "Sophisticated corporate attire that commands attention in every boardroom while remaining effortlessly chic.",
   },
   {
     icon: Heart,
     title: "Ready-to-Wear",
     description:
-      "Curated collections of pre-designed pieces that combine modern trends with timeless sophistication.",
+      "Thoughtfully curated collections that bring the atelier's signature elegance to your everyday wardrobe.",
   },
 ];
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="py-20 sm:py-32 bg-background">
+    <section id="services" className="py-24 sm:py-36 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <p className="font-body text-xs tracking-[0.3em] uppercase text-primary mb-4">
-            What We Offer
+        <div className="text-center max-w-xl mx-auto mb-20">
+          <p className="font-body text-[10px] tracking-[0.4em] uppercase text-primary/80 mb-5">
+            Savoir-Faire
           </p>
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl text-foreground mb-6">
-            Our <span className="text-gold-gradient">Services</span>
+            Our <span className="text-gold-gradient italic">Expertise</span>
           </h2>
           <div className="w-16 h-[1px] line-gold mx-auto mb-6" />
-          <p className="font-body text-muted-foreground leading-relaxed">
-            From concept to creation, we bring your fashion dreams to life with
-            meticulous craftsmanship and an eye for detail.
+          <p className="font-body text-muted-foreground leading-[1.8] text-[15px]">
+            From the first sketch to the final fitting, every creation is an
+            expression of artistry, passion, and uncompromising attention to detail.
           </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-          {services.map((service) => (
+          {services.map((service, index) => (
             <div
               key={service.title}
-              className="group p-6 sm:p-8 bg-card border border-border hover:border-primary/30 transition-all duration-500"
+              className="group p-8 sm:p-10 bg-card border border-border hover:border-primary/20 transition-all duration-700 hover:shadow-xl hover:shadow-primary/5"
+              style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="w-12 h-12 flex items-center justify-center border border-primary/20 mb-6 group-hover:bg-primary/10 transition-colors duration-500">
-                <service.icon className="w-5 h-5 text-primary" />
+              <div className="w-14 h-14 flex items-center justify-center border border-primary/15 mb-8 group-hover:bg-primary/5 group-hover:border-primary/30 transition-all duration-700">
+                <service.icon className="w-5 h-5 text-primary" strokeWidth={1.5} />
               </div>
-              <h3 className="font-display text-lg text-foreground mb-3">
+              <h3 className="font-display text-lg text-foreground mb-4 tracking-wide">
                 {service.title}
               </h3>
-              <p className="font-body text-sm text-muted-foreground leading-relaxed">
+              <p className="font-body text-sm text-muted-foreground leading-[1.8]">
                 {service.description}
               </p>
             </div>

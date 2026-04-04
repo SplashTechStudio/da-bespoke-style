@@ -20,23 +20,23 @@ const images = [
 
 const GallerySection = () => {
   return (
-    <section id="gallery" className="py-20 sm:py-32 bg-secondary">
+    <section id="gallery" className="py-24 sm:py-36 bg-secondary">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <p className="font-body text-xs tracking-[0.3em] uppercase text-primary mb-4">
-            Our Work
+        <div className="text-center max-w-xl mx-auto mb-20">
+          <p className="font-body text-[10px] tracking-[0.4em] uppercase text-primary/80 mb-5">
+            The Collection
           </p>
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl text-foreground mb-6">
-            Recent <span className="text-gold-gradient">Designs</span>
+            Recent <span className="text-gold-gradient italic">Créations</span>
           </h2>
           <div className="w-16 h-[1px] line-gold mx-auto mb-6" />
-          <p className="font-body text-muted-foreground leading-relaxed">
-            A showcase of our latest creations — each piece crafted with passion,
-            precision, and an unwavering commitment to elegance.
+          <p className="font-body text-muted-foreground leading-[1.8] text-[15px]">
+            A curated showcase of our latest work — each piece a testament to
+            the marriage of artistry and precision.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 auto-rows-[250px] sm:auto-rows-[300px]">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 auto-rows-[250px] sm:auto-rows-[320px]">
           {images.map((image, index) => (
             <div
               key={index}
@@ -45,11 +45,11 @@ const GallerySection = () => {
               <img
                 src={image.src}
                 alt={image.alt}
-                className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
+                className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-1000 ease-out"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-background/0 group-hover:bg-background/40 transition-colors duration-500 flex items-end">
-                <p className="font-body text-xs tracking-[0.1em] text-foreground p-4 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+              <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex items-end">
+                <p className="font-body text-[10px] tracking-[0.15em] uppercase text-foreground/90 p-5 translate-y-4 group-hover:translate-y-0 transition-transform duration-700">
                   {image.alt}
                 </p>
               </div>

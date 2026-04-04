@@ -6,19 +6,20 @@ const ContactSection = () => {
   );
 
   return (
-    <section id="contact" className="py-20 sm:py-32 bg-background">
+    <section id="contact" className="py-24 sm:py-36 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <p className="font-body text-xs tracking-[0.3em] uppercase text-primary mb-4">
-            Get in Touch
+        <div className="text-center max-w-xl mx-auto mb-20">
+          <p className="font-body text-[10px] tracking-[0.4em] uppercase text-primary/80 mb-5">
+            Begin Your Journey
           </p>
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl text-foreground mb-6">
-            Let's Create Your <span className="text-gold-gradient">Dream Outfit</span>
+            Let's Create Something{" "}
+            <span className="text-gold-gradient italic">Extraordinary</span>
           </h2>
           <div className="w-16 h-[1px] line-gold mx-auto mb-6" />
-          <p className="font-body text-muted-foreground leading-relaxed">
-            Ready to elevate your style? Reach out to us and let's bring your
-            fashion vision to life.
+          <p className="font-body text-muted-foreground leading-[1.8] text-[15px]">
+            Every masterpiece begins with a conversation. Reach out and let us
+            bring your vision to life with the artistry it deserves.
           </p>
         </div>
 
@@ -27,31 +28,31 @@ const ContactSection = () => {
             href={`https://wa.me/2348125452160?text=${whatsappMessage}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="group p-8 bg-card border border-border hover:border-primary/30 transition-all duration-500 text-center"
+            className="group p-10 bg-card border border-border hover:border-primary/20 transition-all duration-700 text-center hover:shadow-xl hover:shadow-primary/5"
           >
-            <div className="w-12 h-12 flex items-center justify-center border border-primary/20 mx-auto mb-4 group-hover:bg-primary/10 transition-colors">
-              <Phone className="w-5 h-5 text-primary" />
+            <div className="w-14 h-14 flex items-center justify-center border border-primary/15 mx-auto mb-5 group-hover:bg-primary/5 group-hover:border-primary/30 transition-all duration-700">
+              <Phone className="w-5 h-5 text-primary" strokeWidth={1.5} />
             </div>
-            <h3 className="font-display text-lg text-foreground mb-2">WhatsApp & Calls</h3>
-            <p className="font-body text-sm text-muted-foreground">+234 812 545 2160</p>
+            <h3 className="font-display text-lg text-foreground mb-3">WhatsApp & Calls</h3>
+            <p className="font-body text-sm text-muted-foreground tracking-wide">+234 812 545 2160</p>
           </a>
 
           <a
             href="mailto:georgedorcasatabashie@gmail.com"
-            className="group p-8 bg-card border border-border hover:border-primary/30 transition-all duration-500 text-center"
+            className="group p-10 bg-card border border-border hover:border-primary/20 transition-all duration-700 text-center hover:shadow-xl hover:shadow-primary/5"
           >
-            <div className="w-12 h-12 flex items-center justify-center border border-primary/20 mx-auto mb-4 group-hover:bg-primary/10 transition-colors">
-              <Mail className="w-5 h-5 text-primary" />
+            <div className="w-14 h-14 flex items-center justify-center border border-primary/15 mx-auto mb-5 group-hover:bg-primary/5 group-hover:border-primary/30 transition-all duration-700">
+              <Mail className="w-5 h-5 text-primary" strokeWidth={1.5} />
             </div>
-            <h3 className="font-display text-lg text-foreground mb-2">Email Us</h3>
+            <h3 className="font-display text-lg text-foreground mb-3">Email Us</h3>
             <p className="font-body text-sm text-muted-foreground break-all">georgedorcasatabashie@gmail.com</p>
           </a>
 
-          <div className="group p-8 bg-card border border-border text-center">
-            <div className="w-12 h-12 flex items-center justify-center border border-primary/20 mx-auto mb-4">
-              <MapPin className="w-5 h-5 text-primary" />
+          <div className="group p-10 bg-card border border-border text-center">
+            <div className="w-14 h-14 flex items-center justify-center border border-primary/15 mx-auto mb-5">
+              <MapPin className="w-5 h-5 text-primary" strokeWidth={1.5} />
             </div>
-            <h3 className="font-display text-lg text-foreground mb-2">Location</h3>
+            <h3 className="font-display text-lg text-foreground mb-3">Visit Us</h3>
             <p className="font-body text-sm text-muted-foreground">Lagos, Nigeria</p>
           </div>
         </div>
