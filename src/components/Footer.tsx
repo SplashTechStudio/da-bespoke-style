@@ -15,6 +15,17 @@ const Footer = () => {
             tailored with precision, delivered with grace.
           </p>
           <div className="w-16 h-[1px] line-gold mx-auto mb-8" />
+          <p className="font-body text-[11px] text-muted-foreground/50 tracking-[0.15em] mb-3">
+            Built by{" "}
+            <a
+              href="https://www.splashtechstudios.com.ng/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:text-primary/80 transition-colors"
+            >
+              SPC
+            </a>
+          </p>
           <p className="font-body text-[10px] text-muted-foreground/60 tracking-[0.2em] uppercase">
             &copy; {new Date().getFullYear()} DA Fashion Atelier. All rights reserved.
           </p>
