@@ -25,7 +25,7 @@ const HeroSection = () => {
             className="font-body text-[10px] sm:text-xs tracking-[0.4em] uppercase text-primary/80 mb-6 sm:mb-8 opacity-0 animate-fade-in-up"
             style={{ animationDelay: "0.2s" }}
           >
-            The Original Thread Girl — Lagos, Nigeria
+            DA Fashion Atelier — Abuja, Nigeria
           </p>
 
           <h1
